@@ -27,7 +27,7 @@ fi
 echo "Uploading to server: $SERVER..."
 
 # Upload the file to GoFile
-UPLOAD_RESPONSE=$(curl -# -F "file=@$FILE" "https://${SERVER}.gofile.io/uploadFile" 2>&1)
+UPLOAD_RESPONSE=$(curl -# -F "file=@$FILE" "https://${SERVER}.gofile.io/uploadFile") 2>&1
 
 # Check if the upload was successful
 if [[ $? -ne 0 ]]; then
